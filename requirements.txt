@@ -1,2 +1,2 @@
-chromadb[server]
-uvicorn
+chromadb[server]==0.4.24
+uvicorn[standard]==0.29.0
