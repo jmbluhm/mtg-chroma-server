@@ -1,5 +1,9 @@
 # main.py
-from chromadb.server.fastapi import run
+import uvicorn
+from chromadb.server.fastapi import create_app
+
+app = create_app()
 
 if __name__ == "__main__":
-    run(host="0.0.0.0", port=8000, path="/data")
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+    
