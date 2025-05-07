@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mtg-chroma
+    env: docker
+    plan: free
+    disk:
+      name: chroma-persist
+      mountPath: /data
+      sizeGB: 2
+    autoDeploy: true
